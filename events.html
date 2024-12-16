@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <img src="logo.svg" alt="CareerTicket Logo" class="logo">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="navbar" id="navbar">
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('about')">About</a>
+                <div id="about-dropdown" class="dropdown-menu">
+                    <a href="howitworks.html">How it works</a>
+                    <a href="#">Mentorship</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('services')">Services</a>
+                <div id="services-dropdown" class="dropdown-menu">
+                    <a href="consulting.html">Job Placement & Consulting</a>
+                    <a href="events.html">Training & Workshop Events</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('blogs')">Blogs</a>
+                <div id="blogs-dropdown" class="dropdown-menu">
+                    <a href="#blogs">Latest Blogs</a>
+                    <a href="students.html">Students Outcomes & Stories</a>
+                </div>
+            </div>
+            <button class="cta" onclick="openModal()">Enroll me</button>
+        </nav>
+    </div>
+</header>
+
+<div id="enrollModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Application Form</h2>
+    <form id="enrollmentForm" action="submitForm.php" method="POST">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="contact">Contact:</label>
+      <input type="tel" id="contact" name="contact" required><br><br>
+
+      <label>
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+        I agree to the <a href="#">Terms and Conditions</a>
+      </label><br><br>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Workshops & Training Section -->
+<section class="workshops-training">
+    <div class="section-title">
+        <h2>Workshops & Training</h2>
+        <p>Explore our interactive workshops and hands-on training sessions designed to empower your skills.</p>
+    </div>
+
+    <div class="workshops-container">
+        <div class="workshop-card">
+            <img src="digital1.png" alt="Workshop 1">
+            <div class="workshop-content">
+                <h3>Digital Skills Workshop</h3>
+                <p>Learn Microsoft Suite, Google Workspace, and essential tools to boost your productivity.</p>
+                <a href="#" class="btn-workshop">Learn More</a>
+            </div>
+        </div>
+
+        <div class="workshop-card">
+            <img src="digital2.png" alt="Workshop 2">
+            <div class="workshop-content">
+                <h3>Teamwork & Leadership Training</h3>
+                <p>Enhance your collaboration, problem-solving, and leadership abilities.</p>
+                <a href="#" class="btn-workshop">Learn More</a>
+            </div>
+        </div>
+
+        <div class="workshop-card">
+            <img src="digital3.png" alt="Workshop 3">
+            <div class="workshop-content">
+                <h3>Career Development Workshop</h3>
+                <p>Master resume writing, interview techniques, and career planning strategies.</p>
+                <a href="#" class="btn-workshop">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="cta">
+        <p>Ready to start your journey? Apply now and take the first step towards career success!</p>
+        <a  class="cta-button" onclick="openModal()">Apply Now</a>
+    </div>
+<!-- Skills & Jobs Events Section -->
+<section class="skills-jobs-events">
+    <div class="section-title">
+        <h2>Skills & Jobs Events</h2>
+        <p>Attend our events to connect with experts, gain practical knowledge, and access job opportunities.</p>
+    </div>
+
+    <div class="events-container">
+        <div class="event-card">
+            <img src="tech1.png" alt="Event 1">
+            <div class="event-content">
+                <h3>Tech Career Fair</h3>
+                <p>Connect with recruiters, showcase your skills, and explore job openings in the tech industry.</p>
+                <a href="#" class="btn-event" onclick="openModal()">Register Now</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="tech2.png" alt="Event 2">
+            <div class="event-content">
+                <h3>Skill Building Bootcamp</h3>
+                <p>Join immersive bootcamps to learn in-demand skills and receive certification.</p>
+                <a href="#" class="btn-event" onclick="openModal()">Register Now</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="tech3.png" alt="Event 3">
+            <div class="event-content">
+                <h3>Job Networking Sessions</h3>
+                <p>Meet professionals and mentors to build meaningful connections for career success.</p>
+                <a href="#" class="btn-event" onclick="openModal()">Register Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="cta">
+        <p>Ready to start your journey? Apply now and take the first step towards career success!</p>
+        <a  class="cta-button" onclick="openModal()">Apply Now</a>
+    </div>
+    <a href="index.html" class="cta-button">Back</a>
+<footer id="footer" class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: <a href="mailto:talent@umurava.africa">talent@umurava.africa</a></li>
+                <li>Phone: <a href="tel:+250798685382">+250 798 685 382</a></li>
+                <li>Address: Umurava Hub, Kigali, Rwanda</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#about">Career Ticket Program</a></li>
+                <li><a href="consulting.html">Consulting Services</a></li>
+                <li><a href="events.html">Workshops & Training</a></li>
+                <li><a href="#job-placement">Job Placement Assistance</a></li>
+                <li><a href="#faq">Skills & Jobs Events</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/umurava"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/Umurava_"><i class="fab fa-twitter"></i> X</a></li>
+                <li><a href="https://www.linkedin.com/in/umurava"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/umurava_"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Career Ticket by Umurava. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
