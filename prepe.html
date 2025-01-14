@@ -83,6 +83,31 @@
             font-size: 14px;
             margin-bottom: 15px;
         }
+    .btn {
+        background-color: #2B71F0;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+        background-color: #FFC300;
+        transform: scale(1.1);
+    }
+
+    .video-container {
+        display: none;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .video-container.active {
+        display: block;
+    }
     </style>
 </head>
 <body>
@@ -104,7 +129,7 @@
                 <p><strong>Technical skills:</strong> List relevant tools and technologies.</p>
                 <p><strong>Proofread:</strong> Double-check for typos and grammatical errors.</p>
             </ul>
-            <a href="cvform.pdf" download="cvform.pdf" class="btn"><script src="script.js"></script>Download Resume Templates</a>
+            <a href="cvform.pdf" class="btn"><script src="script.js"></script>Download Resume Templates</a>
         </section>
 
         <!-- Interview Preparation Section -->
@@ -119,7 +144,7 @@
                 <p><strong>Showcase your skills:</strong> Provide examples from your experience to back your answers.</p>
                 <p><strong>Ask thoughtful questions:</strong> Prepare 2-3 questions to ask the interviewer.</p>
             </ul>
-            <a href="Interviewquestions.pdf" download="Interviewquestions.pdf" class="btn">Practice Interview Questions</a>
+            <a href="Interviewquestions.pdf" class="btn">Practice Interview Questions</a>
         </section>
 
         <!-- Additional Resources -->
@@ -127,10 +152,22 @@
             <h2>Additional Resources</h2>
             <div class="resources">
                 <div class="resource">
-                    <h3>Cover Letter Tips</h3>
-                    <p>Learn how to write a compelling cover letter to stand out.</p>
-                    <a href="video.mp4" class="btn">Watch a video</a>
-                </div>
+    <h3>Cover Letter Tips</h3>
+    <p>Learn how to write a compelling cover letter to stand out.</p>
+    <!-- Watch Video Button -->
+    <button class="btn" onclick="toggleVideo()">Watch Video</button>
+    
+    <!-- Video Container -->
+    <div class="video-container" id="videoContainer">
+        <video width="640" height="360" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <button class="btn" onclick="toggleVideo()">Close Video</button>
+    </div>
+</div>
+
                 <div class="resource">
                     <h3>Mock Interviews</h3>
                     <p>Sign up for mock interviews with industry professionals.</p>
