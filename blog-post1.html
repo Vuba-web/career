@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career and Workplace Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #001A40;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #2B71F0;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .content a {
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background-color: #2B71F0;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .content a:hover {
+            background-color: #001A40;
+        }
+        .back-btn span {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <img src="logo.svg" alt="CareerTicket Logo" class="logo">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="navbar" id="navbar">
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('about')">About</a>
+                <div id="about-dropdown" class="dropdown-menu">
+                    <a href="howitworks.html">How it works</a>
+                    <a href="#">Mentorship</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('services')">Services</a>
+                <div id="services-dropdown" class="dropdown-menu">
+                    <a href="consulting.html">Consulting</a>
+                    <a href="events.html">Workshop Events</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('blogs')">Blogs</a>
+                <div id="blogs-dropdown" class="dropdown-menu">
+                    <a href="#blog">Latest Blogs</a>
+                    <a href="#Outcomes">Students Outcomes</a>
+                    <a href="#stories">Students Stories</a>
+                </div>
+            </div>
+            <button class="cta" onclick="openModal()">Enroll me</button>
+        </nav>
+    </div>
+</header>
+    <div class="content">
+        <h1>Soft Skills Program</h1>
+        <p><strong>Enhance your soft skills to succeed in the modern job market!</strong></p>
+        <ul>
+            <p>Problem Solving</p>
+            <p>Creativity</p>
+            <p>Teamwork and Collaboration</p>
+            <p>Communication</p>
+            <p>...</p>
+        </ul>
+        <p>Click below to view or download the complete program details.</p>
+        <a href="Soft_skills.pdf" class="btn" download="Soft_skills.pdf">View Program</a>
+        <a href="index.html" class="btn back-btn"><span>&larr;</span> Back to Home</a>
+    </div>
+
+    <div class="content">
+        <h1>Workplace Tools Program</h1>
+        <p><strong>Master essential tools to enhance productivity and communication!</strong></p>
+        <ul>
+            <p>AI Tools</p>
+            <p>Project Management Tools</p>
+            <p>Digital Communication</p>
+        </ul>
+        <p>Click below to view or download the complete program details.</p>
+        <a href="workshop.pdf" class="btn" download="workshop.pdf">View Program</a>
+        <a href="index.html" class="btn back-btn"><span>&larr;</span> Back to Home</a>
+    </div>
+
+    <div class="content">
+        <h1>Career Skills Program</h1>
+        <p><strong>Build a strong professional profile and ace your job search!</strong></p>
+        <ul>
+            <p>Resume Writing and Interview Skills</p>
+            <p>Professional Profile Building</p>
+        </ul>
+        <p>Click below to view or download the complete program details.</p>
+        <a href="career.pdf" class="btn" download="career.pdf">View Program</a>
+        <a href="index.html" class="btn back-btn"><span>&larr;</span> Back to Home</a>
+    </div>
+
+    <div class="content">
+        <h1>Digital Skills Program</h1>
+        <p><strong>Develop core digital skills to thrive in technology-driven workplaces!</strong></p>
+        <ul>
+            <p>Microsoft Suite</p>
+            <p>Google Suite</p>
+            <p>Computer Proficiency</p>
+        </ul>
+        <p>Click below to view or download the complete program details.</p>
+        <a href="Digital_skills.pdf" class="btn" download="Digital_skills.pdf">View Program</a>
+        <a href="index.html" class="btn back-btn"><span>&larr;</span> Back to Home</a>
+    </div>
+<footer id="footer" class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: <a href="mailto:talent@umurava.africa">talent@umurava.africa</a></li>
+                <li>Phone: <a href="tel:+250798685382">+250 798 685 382</a></li>
+                <li>Address: Umurava Hub, Kigali, Rwanda</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#about">Career Ticket Program</a></li>
+                <li><a href="consulting.html">Consulting Services</a></li>
+                <li><a href="events.html">Workshops & Training</a></li>
+                <li><a href="#job-placement">Job Placement Assistance</a></li>
+                <li><a href="#faq">Skills & Jobs Events</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/umurava"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/Umurava_"><i class="fab fa-twitter"></i> X</a></li>
+                <li><a href="https://www.linkedin.com/in/umurava"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/umurava_"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Career Ticket by Umurava. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
