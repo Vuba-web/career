@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -18,21 +19,22 @@
                 <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('about')">About</a>
                 <div id="about-dropdown" class="dropdown-menu">
                     <a href="howitworks.html">How it works</a>
-                    <a href="#">Mentorship</a>
+                    <a href="video.mp4">Video on Sample course</a>
                 </div>
             </div>
             <div class="dropdown">
                 <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('services')">Services</a>
                 <div id="services-dropdown" class="dropdown-menu">
-                    <a href="consulting.html">Job Placement & Consulting</a>
-                    <a href="events.html">Training & Workshop Events</a>
+                    <a href="consulting.html">Consulting</a>
+                    <a href="events.html">Workshop Events</a>
                 </div>
             </div>
             <div class="dropdown">
                 <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('blogs')">Blogs</a>
                 <div id="blogs-dropdown" class="dropdown-menu">
-                    <a href="#blogs">Latest Blogs</a>
-                    <a href="students.html">Students Outcomes & Stories</a>
+                    <a href="#blog">Latest Blogs</a>
+                    <a href="#Outcomes">Students Outcomes</a>
+                    <a href="#stories">Students Stories</a>
                 </div>
             </div>
             <button class="cta" onclick="openModal()">Enroll me</button>
@@ -61,156 +63,180 @@
         I agree to the <a href="#">Terms and Conditions</a>
       </label><br><br>
 
-      <button type="submit" class="submit-btn">Submit</button>
+      <button type="submit" class="submit-btn"><a href="index.html" style="text-decoration: none;">Submit</a></button>
     </form>
   </div>
 </div>    
 
-    <section class="hero">
+<section class="hero">
+    <div class="overlay">
         <h1>Empower Your Career Journey</h1>
         <p>Develop Digital Confidence and Soft Skills for Success in the Modern Job Market.</p>
-        <button class="cta" onclick="openModal()">Enroll me</button>
-        <button class="cta">Learn More</button>
-    </section>
+        <button class="cta" onclick="openModal()">Enroll Me</button>
+        <button  class="cta"><a href="howitworks.html">Learn More</a></button>
+    </div>
+</section>
+
+<h2 class="section">Career Ticket Program Details</h2>
+<section class="about">
+    <div class="marquee">
+        <p class="marquee-text">
+            Career Ticket by Umurava is designed to equip young individuals with the skills they need to thrive in the 21st-century workforce.
+        </p>
+    </div>
+</section>
+
 
     <section id="about" class="section">
-        <h2>About CareerTicket & Skills Packages</h2>
-        <p>
-        Career Ticket by Umurava is designed to equip young individuals with the skills they need to thrive in the 21st-century workforce. This comprehensive program covers key areas of Digital Skills, Soft Skills, Workplace Tools, and Career Path Development, ensuring that participants are ready for freelancing, remote work, consulting, entrepreneurship, and more.
-        </p>
         <h3>Skills Package Includes</h3><br>
-<div class="skills-grid">
-    <div class="skill-card">
+       <div class="skills-grid">
+       <div class="skill-card">
         <i class="fas fa-laptop-code"></i>
         <h4>Digital Skills</h4>
         <ul>
-            <li>Microsoft Suite</li>
-            <li>Advanced Microsoft Word, PowerPoint, and Excel</li>
-            <li>Google Suite (Docs, Sheets, Slides, Forms, Meet, Calendar)</li>
-            <li>Computer Proficiency (Hardware, Software, Typing, File Management)</li>
+            <p>Microsoft Suite</p>
+            <p>Google Suite</li>
+            <p>Computer Proficiency</p>
+            <p>...</p>
         </ul>
         <a href="blog-post1.html" class="cta">View Program</a>
-    </div>
-    <div class="skill-card">
+       </div>
+       <div class="skill-card">
         <i class="fas fa-hands-helping"></i>
         <h4>Soft Skills</h4>
         <ul>
-            <li>Critical Thinking and Problem Solving</li>
-            <li>Creativity and Innovation</li>
-            <li>Teamwork and Collaboration</li>
-            <li>Communication and Emotional Intelligence</li>
-            <li>Adaptability and Leadership</li>
+            <p>Problem Solving</p>
+            <p>Creativity</p>
+            <p>Teamwork and Collaboration</p>
+            <p>Communication</p>
+            <p>...</p>
         </ul>
         <a href="blog-post1.html" class="cta">View Program</a>
-    </div>
-    <div class="skill-card">
+       </div>
+       <div class="skill-card">
         <i class="fas fa-toolbox"></i>
         <h4>Workplace Tools</h4>
         <ul>
-            <li>AI Tools (ChatGPT, Gemini, Claude)</li>
-            <li>Project Management Tools (Trello, Asana, Slack)</li>
-            <li>Digital Communication (Email, Zoom, Microsoft Teams)</li>
-            <li>Social Media Use and Content Creation</li>
+            <p>AI Tools</p>
+            <p>Project Management Tools</p>
+            <p>Digital Communication </p>
+            <p>...</p>
         </ul>
         <a href="blog-post1.html" class="cta">View Program</a>
-    </div>
-    <div class="skill-card">
+        </div>
+        <div class="skill-card">
         <i class="fas fa-user-tie"></i>
         <h4>Career Skills</h4>
         <ul>
-            <li>Resume Writing and Interview Skills</li>
-            <li>Professional Profile Building</li>
-            <li>Networking and Career Planning</li>
-            <li>Life Skills (Adaptability, Productivity, Initiative)</li>
+            <p>Resume Writing and Interview Skills</p>
+            <p>Professional Profile Building</p>
+            <p>...</p>
+            
         </ul>
         <a href="blog-post1.html" class="cta">View Program</a>
-    </div>
-</div>
-
+       </div>
+       </div>
     </section>
 <!-- Program Details Section -->
 <section id="program-details" class="section">
-    <h2>Career Ticket Program Details</h2>
     
-    <!-- Learning Approach -->
-    <div class="learning-approach">
-        <h3>Learning Approach</h3>
-        <ul>
-            <li><strong>Project-Based Learning:</strong> Active work on real-world projects.</li>
-            <li><strong>Blended Learning:</strong> A combination of online and in-class learning.</li>
-            <li><strong>Peer Learning:</strong> Leveraging peer feedback and collaboration.</li>
-            <li><strong>Personalized Learning:</strong> Tailored learning journey.</li>
-            <li><strong>Expert-Led Sessions:</strong> Learning directly from industry experts.</li>
-        </ul>
+    
+<section class="skills-jobs-events">
+    <div class="section-title">
+        <h2>Skills & Jobs Events</h2>
+        <p>Attend our events to connect with experts, gain practical knowledge, and access job opportunities.</p>
     </div>
-    
-    <!-- Program Duration and Fee -->
-    <div class="program-info">
-        <h3>Program Duration and Fee</h3>
-        <p><strong>Duration:</strong> 6 Weeks</p>
-        <p><strong>Fee:</strong> 200 USD</p>
+
+    <div class="events-container">
+        <div class="event-card">
+            <img src="tech1.png" alt="Event 1">
+            <div class="event-content">
+                <h3>Tech Career Fair</h3>
+                <p>Connect with recruiters, showcase your skills, and explore job openings in the tech industry.</p>
+                <a href="#" class="btn-event" onclick="openModal()">Register Now</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="tech2.png" alt="Event 2">
+            <div class="event-content">
+                <h3>Skill Building Bootcamp</h3>
+                <p>Join immersive bootcamps to learn in-demand skills and receive certification.</p>
+                <a href="#" class="btn-event" onclick="openModal()">Register Now</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="tech3.png" alt="Event 3">
+            <div class="event-content">
+                <h3>Job Networking Sessions</h3>
+                <p>Meet professionals and mentors to build meaningful connections for career success.</p>
+                <a href="#" class="btn-event" onclick="openModal()">Register Now</a>
+            </div>
+        </div>
     </div>
-    
-    <!-- Call to Action -->
+</section>
+
+<section class="student-outcomes" id="Outcomes">
+    <div class="section-title">
+        <h2>Student Outcomes</h2>
+        <p>See the achievements of our students and where they are now.</p>
+    </div>
+
+    <div class="outcomes-container">
+        <div class="outcome">
+            <h3>95% Job Placement</h3>
+            <p>Our students secure employment within 6 months of completing the program.</p>
+        </div>
+        <div class="outcome">
+            <h3>Global Opportunities</h3>
+            <p>Students have landed jobs in top companies worldwide.</p>
+        </div>
+        <div class="outcome">
+            <h3>Increased Salaries</h3>
+            <p>Our graduates report an average 50% salary increase post-program.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Student Stories Section -->
+<section class="student-stories" id="Stories">
+    <div class="section-title">
+        <h2>Student Stories</h2>
+        <p>Hear directly from our students about their success journeys.</p>
+    </div>
+
+    <div class="stories-container">
+        <!-- Story 1 -->
+        <div class="story">
+            <img src="student1.png" alt="Student 1">
+            <div class="story-content">
+                <h3>Jane Kimenyi</h3>
+                <p>"The CareerTicket program changed my life! I landed my dream job within months."</p>
+            </div>
+        </div>
+        <!-- Story 2 -->
+        <div class="story">
+            <img src="student2.png" alt="Student 2">
+            <div class="story-content">
+                <h3>John D'Amour Rugaju</h3>
+                <p>"The mentorship and training were exceptional. I now work at a global tech company!"</p>
+            </div>
+        </div>
+        <!-- Story 3 -->
+        <div class="story">
+            <img src="student3.png" alt="Student 3">
+            <div class="story-content">
+                <h3>Emily Ally</h3>
+                <p>"From workshops to job placement, every step of the journey was smooth and supportive."</p>
+            </div>
+        </div>
+    </div>
     <div class="cta">
         <p>Ready to start your journey? Apply now and take the first step towards career success!</p>
         <a  class="cta-button" onclick="openModal()">Apply Now</a>
     </div>
 </section>
-
-<!-- Program Fee Section -->
-<section id="program-fee" class="section">
-    <h2>CareerTicket Program Fee</h2>
-    <p>“Develop Digital Confidence and Soft Skills for the Modern Job Market”</p>
-    <p><strong>Designed for Young Talents & Job Seekers</strong></p>
-    
-    <!-- Fee Table -->
-<div class="fee-table">
-  <table>
-    <thead>
-      <tr>
-        <th>Skills Packages</th>
-        <th>1-50</th>
-        <th>50-100</th>
-        <th>100-200</th>
-        <th>200-400</th>
-        <th>400-600</th>
-        <th>700+</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Program Fee</td>
-        <td>200K/Per 1 Individual</td>
-        <td>150K/Per Individual</td>
-        <td>100K/Per Individual</td>
-        <td>80K/Per Individual</td>
-        <td>60K/Per Individual</td>
-        <td>50K/Per Individual</td>
-      </tr>
-      <tr>
-        <td>Expert-Led Sessions and Project-Based Learning</td>
-        <td colspan="6">✔</td>
-      </tr>
-      <tr>
-        <td>Access to Modules & Practices</td>
-        <td colspan="6">✔</td>
-      </tr>
-      <tr>
-        <td>One-on-One Career Coaching</td>
-        <td colspan="6">✔</td>
-      </tr>
-      <tr>
-        <td>Exclusive Alumni Community Access</td>
-        <td colspan="6">✔</td>
-      </tr>   
-    </tbody>
-  </table>
-  <p><strong>Note:</strong> For Volume: From 15+ Individuals, additional cost for large classroom workshops may apply.</p>
-</div>
-</section>
-
-
 <section id="blog" class="section">
     <h2>Latest Blog Posts</h2>
     <div class="blog-posts">
@@ -218,25 +244,25 @@
             <img src="image1.png" alt="Blog Post 1">
             <h3>Understanding Digital Skills for Career Growth</h3>
             <p>Digital skills are crucial for success in the modern workplace. In this post, we explore how digital literacy can boost your career prospects.</p>
-            <a href="blog-post1.html" class="cta">Read More</a>
+            <a href="blog-post1.pdf" download="blog-post1.pdf" class="cta">Read More</a>
         </div>
         <div class="blog-post">
             <img src="blog2.png" alt="Blog Post 2">
             <h3>The Power of Soft Skills in Professional Development</h3>
             <p>Soft skills like communication and teamwork are essential for success in any job. Learn how to develop these important abilities.</p>
-            <a href="blog-post2.html" class="cta">Read More</a>
+            <a href="blog-post2.pdf" download="blog-post2.pdf"class="cta">Read More</a>
         </div>
         <div class="blog-post">
             <img src="image2.png" alt="Blog Post 3">
             <h3>Workplace Tools You Need to Succeed</h3>
             <p>Mastering tools like Trello, Asana, and Slack can transform the way you work. Read on to learn how to use these platforms effectively.</p>
-            <a href="blog-post3.html" class="cta">Read More</a>
+            <a href="blog-post3.pdf" download="blog-post3.pdf" class="cta">Read More</a>
         </div>
         <div class="blog-post">
             <img src="image4.png" alt="Blog Post 4">
             <h3>Building Your Career Path: Tips and Insights</h3>
             <p>Starting your career with the right skills is crucial. This post offers practical tips for success in the job market and beyond.</p>
-            <a href="blog-post4.html" class="cta">Read More</a>
+            <a href="blog-post4.pdf" download="blog-post4.pdf" class="cta">Read More</a>
         </div>
     </div>
 </section>
@@ -293,7 +319,7 @@
                 <li><a href="consulting.html">Consulting Services</a></li>
                 <li><a href="events.html">Workshops & Training</a></li>
                 <li><a href="#job-placement">Job Placement Assistance</a></li>
-                <li><a href="#faq">Skills & Jobs Events</a></li>
+                <li><a href="Pricing.pdf">pricing</a></li>
             </ul>
         </div>
         <div class="footer-section">
