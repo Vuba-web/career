@@ -88,6 +88,29 @@
         </nav>
     </div>
 </header>
+<div id="enrollModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Application Form</h2>
+    <form id="enrollmentForm" action="submitForm.php" method="POST">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="contact">Contact:</label>
+      <input type="tel" id="contact" name="contact" required><br><br>
+
+      <label>
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+        I agree to the <a href="#">Terms and Conditions</a>
+      </label><br><br>
+
+      <button type="submit" class="submit-btn"><a href="index.html" style="text-decoration: none;">Submit</a></button>
+    </form>
+  </div>
+</div> 
     <div class="content">
         <h1>Soft Skills Program</h1>
         <p><strong>Enhance your soft skills to succeed in the modern job market!</strong></p>
