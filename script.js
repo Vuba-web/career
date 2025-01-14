@@ -72,3 +72,9 @@ document.addEventListener('click', function(event) {
         closeAllDropdowns(); // Close all dropdowns
     }
 });
+    function toggleVideo() {
+        const videoContainer = document.getElementById('videoContainer');
+        videoContainer.classList.toggle('active');
+    }
+
+
